@@ -11,7 +11,7 @@ function Hero() {
         <div className="hero-right">
           <img
             className="portrait"
-            src="../../public/portrait.jpg"
+            src="./portrait.jpg"
             alt="Andreas chilling with a hansome bunny"
           />
         </div>
