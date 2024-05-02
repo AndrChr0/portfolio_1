@@ -16,7 +16,7 @@ function Hero() {
           />
         </div>
       </div>
-      <img className="bird-svg" src="../../public/bird-svgrepo-com.svg" alt="an outline of a bird" />
+      <img className="bird-svg" src="./bird-svgrepo-com.svg" alt="an outline of a bird" />
 
     </>
   );
