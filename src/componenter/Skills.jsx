@@ -60,14 +60,14 @@ function Skills() {
                 <img src="../../public/icons/php.svg" alt="PHP icon" />
                 <span className="tooltip">PHP</span>
             </div>
-            <div className="skill-item">
+            {/* <div className="skill-item">
                 <img src="../../public/icons/github.svg" alt="GitHub icon" />
                 <span className="tooltip">GitHub</span>
-            </div>
-            <div className="skill-item">
+            </div> */}
+            {/* <div className="skill-item">
                 <img src="../../public/icons/jest.png" alt="Jest icon" />
                 <span className="tooltip">Jest</span>
-            </div>
+            </div> */}
             <div className="skill-item">
                 <img src="../../public/icons/docker.svg" alt="Docker icon" />
                 <span className="tooltip">Docker</span>

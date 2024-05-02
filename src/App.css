@@ -14,7 +14,7 @@ body {
 
 /* general */
 main {
-width: 95%;
+width: 87%;
 margin: 0 auto;
 }
 p {
@@ -101,15 +101,26 @@ a {
 }
 
 /* skills */
-.skills-container {
-    padding-top: 1em;
+/* .skills-container {
+    padding-top: .5em;
     display: flex;
     flex-wrap: wrap;
-}
+    gap: 1em;
+} */
+
+
+.skills-container {
+    padding-top: 1em;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 5px;
+    } 
 
 .skill-item {
     position: relative;
-    margin: 10px;
+    margin: .7em .2em;
 }
 
 .skill-item img {
@@ -128,13 +139,13 @@ a {
     /* background-color: black; */
     color: black;
     text-align: center;
-    padding: 5px 0;
+    padding: .3em 0;
     border-radius: 6px;
     position: absolute;
     z-index: 1;
     bottom: 100%;
     left: 50%;
-    margin-left: -60px;
+    margin-left: -20vw;
 }
 
 .skill-item:hover .tooltip {
@@ -142,9 +153,57 @@ a {
 }
 
 
+footer {
+    margin-top: 1em;
+    background-color: lightgrey;
+    color: #333;
+    text-align: center;
+    padding: 1.5em;
+}
+
+
 
 /* Media queries */
+
+@media screen and (max-width: 360px) {
+    .skill-item img {
+        height: 9vh;
+    }
+
+    .bird-svg {
+        width: 20vw;
+    }
+  
+
+}
+
+
+@media screen and (min-width: 520px) {
+    .skills-container {
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        } 
+
+        .bird-svg {
+            width: 16vw;
+        }
+    
+        .tooltip {
+            margin-left: -15vw;
+        }
+
+  }
+
 @media screen and (min-width: 768px) {
+    .bird-svg {
+        width: 15vw;
+    }
+
+    .tooltip {
+        margin-left: -13vw;
+    }
+
+
   main {
       width: 80%;
       margin: 0 auto;
@@ -161,4 +220,48 @@ a {
     .portrait {
         width: 80%;
     }
+}
+
+@media screen and (min-width: 1080px) {
+    h1 {
+        font-size: 3.5em;
+        line-height: .9em;
+    }
+
+    .hero-right {
+        width: 60%;
+    }
+
+    .portrait {
+        width: 85%;
+    }
+
+    main {
+        width: 70%;
+    }
+
+    .tooltip {
+        margin-left: -9vw;
+    }
+
+    .skills-container {
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        } 
+
+
+        .bird-svg {
+            width: 10vw;
+        }
+}
+
+@media screen and (min-width: 1080px) {
+    .portrait {
+        width: 80%;
+    }
+    .tooltip {
+        margin-left: -7vw;
+    }
+
+
 }
