@@ -8,9 +8,9 @@ function Nav() {
           <li>
             <a href="/">Home</a>
           </li>
-          {/* <li>
+          <li>
             <a href="/projects">Projects</a>
-          </li> */}
+          </li>
         </ul>
       </nav>
     </header>
