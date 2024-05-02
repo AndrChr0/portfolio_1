@@ -69,7 +69,7 @@ function Skills() {
                 <span className="tooltip">Jest</span>
             </div> */}
             <div className="skill-item">
-                <img src="./public/icons/docker.svg" alt="Docker icon" />
+                <img src="./icons/docker.svg" alt="Docker icon" />
                 <span className="tooltip">Docker</span>
             </div>
             <div className="skill-item">
