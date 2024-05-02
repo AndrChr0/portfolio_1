@@ -46,8 +46,10 @@ nav {
 
 nav ul {
   padding-left: 5vw;
+  width: 95%;
   display: flex;
   align-items: center;
+  justify-content: space-between;
   list-style: none;
 }
 
@@ -60,6 +62,10 @@ nav ul li:hover {
   background-color: #dddddd;
 }
 
+.nav-inner-left {
+    display: flex;
+}
+
 nav ul li a {
   text-decoration: none;
   font-weight: bold;
@@ -69,6 +75,16 @@ nav ul li a {
 
 a {
   color: #333;
+}
+
+.github-icon-nav {
+    width: 10vw;
+}
+.github-icon-nav:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s;
+    filter: invert(.2);
+
 }
 
 /* hero */
@@ -159,6 +175,10 @@ footer {
 }
 
 @media screen and (min-width: 520px) {
+
+    .github-icon-nav {
+        width: 7vw;
+    }
   .skills-container {
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(3, 1fr);
@@ -174,6 +194,12 @@ footer {
 }
 
 @media screen and (min-width: 768px) {
+
+    .github-icon-nav {
+        width: 6vw;
+    }
+
+
   .bird-svg {
     width: 15vw;
   }
@@ -201,6 +227,10 @@ footer {
 }
 
 @media screen and (min-width: 1080px) {
+
+    .github-icon-nav {
+        width: 5vw;
+    }
   h1 {
     font-size: 3.5em;
     line-height: 0.9em;
@@ -233,6 +263,9 @@ footer {
 }
 
 @media screen and (min-width: 1080px) {
+    .github-icon-nav {
+        width: 3vw;
+    }
   .portrait {
     width: 80%;
   }
