@@ -6,7 +6,7 @@ function Hero() {
       <div className="hero-wrapper">
         <div className="hero-left">
           <h1>Andreas Christiansen</h1>
-          <p className="heading-sub-text">Wed developer</p>
+          <p className="heading-sub-text">Web Developer</p>
         </div>
         <div className="hero-right">
           <img
@@ -16,8 +16,11 @@ function Hero() {
           />
         </div>
       </div>
-      <img className="bird-svg" src="./bird-svgrepo-com.svg" alt="an outline of a bird" />
-
+      <img
+        className="bird-svg"
+        src="./bird-svgrepo-com.svg"
+        alt="an outline of a bird"
+      />
     </>
   );
 }
