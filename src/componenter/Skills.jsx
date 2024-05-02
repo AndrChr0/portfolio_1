@@ -73,19 +73,19 @@ function Skills() {
                 <span className="tooltip">Docker</span>
             </div>
             <div className="skill-item">
-                <img src="./public/icons/MDB.svg" alt="MongoDB icon" />
+                <img src="./icons/MDB.svg" alt="MongoDB icon" />
                 <span className="tooltip">MongoDB</span>
             </div>
             <div className="skill-item">
-                <img src="./public/icons/database-solid.svg" alt="MySQL icon" />
+                <img src="./icons/database-solid.svg" alt="MySQL icon" />
                 <span className="tooltip">MySQL</span>
             </div>
             <div className="skill-item">
-                <img src="./public/icons/node.svg" alt="Node icon" />
+                <img src="./icons/node.svg" alt="Node icon" />
                 <span className="tooltip">Node</span>
             </div>
             <div className="skill-item">
-                <img src="./public/icons/tailwind.png" alt="Tailwind icon" />
+                <img src="./icons/tailwind.png" alt="Tailwind icon" />
                 <span className="tooltip">Tailwind</span>
             </div>
         
