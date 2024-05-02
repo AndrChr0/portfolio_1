@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap');
+
+*{
+    margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto Slab', serif;
+
+}
+body {
+    background-color: whitesmoke;
+
+}
+
+/* general */
+main {
+width: 95%;
+margin: 0 auto;
+}
+p {
+    font-size: 1.3em;
+    line-height: 1.6em;
+}
+
+h1 {
+    font-size: 2.7em;
+    line-height: .9em;
+}
+
+h2 {
+    font-size: 2.2em;
+}
+
+.heading-sub-text {
+    font-size: 1.4em;
+    padding-left: 1em;
+}
+
+
+/* navigation */
+
+nav {
+  width: 100%;  
+  min-height: 8vh;
+  background-color: lightgrey;
+  color: #333;
+  display: flex;
+}
+
+nav ul {
+    padding-left: 5vw;
+  display: flex;
+  align-items: center;
+  list-style: none;
+}
+
+nav ul li {
+    padding: 10% 1em;
+width: auto;
+}
+
+nav ul li:hover {
+  background-color: #dddddd;
+}
+
+nav ul li a {
+  text-decoration: none;
+  font-weight: bold;
+  color: #333;
+  font-size: 1.3em;
+}
+
+a {
+    /* text-decoration: none; */
+    color: #333;
+}
+
+/* hero */
+
+.hero-wrapper{
+    /* height: 70dvh; */
+    padding-top: 2em;
+}
+.portrait {
+    width: 95%;
+    padding-top: 4em;
+    padding-left: 1em;
+}
+
+.bird-svg {
+    display: block;
+    width: 25vw;
+    padding-top: 5em;
+    padding-bottom: 5em;
+    margin: 0 auto;
+}
+
+/* about */
+.about-container {
+    padding-bottom: 4em;
+}
+
+/* skills */
+.skills-container {
+    padding-top: 1em;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.skill-item {
+    position: relative;
+    margin: 10px;
+}
+
+.skill-item img {
+    /* width: 10vw; or any other size */
+    height: 10vh;
+    transition: transform .3s;
+}
+
+.skill-item img:hover {
+    transform: scale(1.1);
+}
+
+.tooltip {
+    visibility: hidden;
+    width: 120px;
+    /* background-color: black; */
+    color: black;
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 6px;
+    position: absolute;
+    z-index: 1;
+    bottom: 100%;
+    left: 50%;
+    margin-left: -60px;
+}
+
+.skill-item:hover .tooltip {
+    visibility: visible;
+}
+
+
+
+/* Media queries */
+@media screen and (min-width: 768px) {
+  main {
+      width: 80%;
+      margin: 0 auto;
+  }
+  .hero-right {
+      width: 50%;
+  }
+   .hero-wrapper {
+       display: flex;
+       justify-content: space-between;
+       align-items: center;
+   }
+
+    .portrait {
+        width: 80%;
+    }
+}
