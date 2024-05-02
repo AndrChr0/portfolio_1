@@ -33,7 +33,7 @@ function Skills() {
         <h2>Skills</h2>
         <div className="skills-container">
           <div className="skill-item">
-            <img src="../../public/icons/js.svg" alt="JavaScript icon" />
+            <img src="./public/icons/js.svg" alt="JavaScript icon" />
             <span className="tooltip">JavaScript</span>
           </div>
           <div className="skill-item">
