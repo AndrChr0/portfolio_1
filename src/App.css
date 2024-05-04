@@ -66,6 +66,9 @@ nav ul li:hover {
     display: flex;
 }
 
+ a {
+    display: inline;
+ } 
 nav ul li a {
   text-decoration: none;
   font-weight: bold;
@@ -78,7 +81,8 @@ a {
 }
 
 .github-icon-nav {
-    width: 10vw;
+    width: 8vw;
+    align-items: center;
 }
 .github-icon-nav:hover {
     transform: scale(1.1);
@@ -175,10 +179,9 @@ footer {
 }
 
 @media screen and (min-width: 520px) {
-
-    .github-icon-nav {
-        width: 7vw;
-    }
+  .github-icon-nav {
+    width: 7vw;
+}
   .skills-container {
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(3, 1fr);
@@ -229,7 +232,7 @@ footer {
 @media screen and (min-width: 1080px) {
 
     .github-icon-nav {
-        width: 5vw;
+        width: 4vw;
     }
   h1 {
     font-size: 3.5em;
@@ -260,16 +263,12 @@ footer {
   .bird-svg {
     width: 10vw;
   }
-}
-
-@media screen and (min-width: 1080px) {
-    .github-icon-nav {
-        width: 3vw;
-    }
   .portrait {
     width: 80%;
   }
   .tooltip {
     margin-left: -8vw;
   }
+
 }
+

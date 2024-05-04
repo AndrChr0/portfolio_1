@@ -1,6 +1,6 @@
 function About() {
   return (
-    <div className="about-container">
+    <div tabIndex={0} className="about-container">
       <h2>About</h2>
       <p>
         I am currently completing my second year at NTNU Gjøvik, where I am

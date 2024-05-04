@@ -10,11 +10,11 @@ function Skills() {
           </div>
           <div className="skill-item">
             <img src="./icons/html5.svg" alt="HTML5 icon" />
-            <span className="tooltip">HTML5</span>
+            <span className="tooltip">HTML</span>
           </div>
           <div className="skill-item">
             <img src="./icons/css3-alt.svg" alt="CSS3 icon" />
-            <span className="tooltip">CSS3</span>
+            <span className="tooltip">CSS</span>
           </div>
           <div className="skill-item">
             <img src="./icons/react.svg" alt="React icon" />
