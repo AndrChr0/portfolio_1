@@ -35,7 +35,6 @@ h2 {
 }
 
 /* navigation */
-
 nav {
   width: 100%;
   min-height: 8vh;
@@ -63,17 +62,18 @@ nav ul li:hover {
 }
 
 .nav-inner-left {
-    display: flex;
+  display: flex;
 }
 
- a {
-    display: inline;
- } 
+a {
+  display: inline;
+}
 nav ul li a {
   text-decoration: none;
   font-weight: bold;
   color: #333;
   font-size: 1.3em;
+  padding: 1em 0;
 }
 
 a {
@@ -81,18 +81,16 @@ a {
 }
 
 .github-icon-nav {
-    width: 8vw;
-    align-items: center;
+  width: 8vw;
+  align-items: center;
 }
 .github-icon-nav:hover {
-    transform: scale(1.1);
-    transition: transform 0.3s;
-    filter: invert(.2);
-
+  transform: scale(1.1);
+  transition: transform 0.3s;
+  filter: invert(0.2);
 }
 
 /* hero */
-
 .hero-wrapper {
   padding-top: 2em;
 }
@@ -116,7 +114,6 @@ a {
 }
 
 /* skills */
-
 .skills-container {
   padding-top: 1em;
   display: grid;
@@ -158,6 +155,45 @@ a {
   visibility: visible;
 }
 
+/* projects */
+.project-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.project-card {
+  display: flex;
+  flex-direction: column;
+  padding: 1em;
+  margin: 1.2em 0;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+}
+
+.project-left h2 {
+  font-size: 2em;
+}
+
+.project-right p {
+  font-size: 1.1em;
+}
+
+.project-left img {
+  padding: 1em 0;
+  width: 100%;
+}
+
+.project-heading {
+  padding-top: 0.7em;
+}
+
+.project-links {
+  display: flex;
+  gap: 1em;
+  padding-top: 1em;
+}
+
+/* footer */
 footer {
   margin-top: 1em;
   background-color: lightgrey;
@@ -179,9 +215,23 @@ footer {
 }
 
 @media screen and (min-width: 520px) {
+  .project-container {
+    width: 90%;
+  }
+
+  .project-left img {
+    padding: 1em 0;
+    width: 95%;
+  }
+
+  .project-right p {
+    font-size: 1.2em;
+    width: 95%;
+  }
+
   .github-icon-nav {
     width: 7vw;
-}
+  }
   .skills-container {
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(3, 1fr);
@@ -197,11 +247,9 @@ footer {
 }
 
 @media screen and (min-width: 768px) {
-
-    .github-icon-nav {
-        width: 6vw;
-    }
-
+  .github-icon-nav {
+    width: 6vw;
+  }
 
   .bird-svg {
     width: 15vw;
@@ -230,10 +278,13 @@ footer {
 }
 
 @media screen and (min-width: 1080px) {
+  .project-right p {
+    width: 95%;
+  }
 
-    .github-icon-nav {
-        width: 4vw;
-    }
+  .github-icon-nav {
+    width: 3.4vw;
+  }
   h1 {
     font-size: 3.5em;
     line-height: 0.9em;
@@ -269,6 +320,4 @@ footer {
   .tooltip {
     margin-left: -8vw;
   }
-
 }
-
