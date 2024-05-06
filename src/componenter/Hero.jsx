@@ -4,12 +4,12 @@ function Hero() {
   return (
     <>
       <div className="hero-wrapper">
-        <div className="hero-left">
+        <div tabIndex={0} className="hero-left">
           <h1>Andreas Christiansen</h1>
           <p className="heading-sub-text">Web Developer</p>
         </div>
         <div className="hero-right">
-          <img
+          <img tabIndex={0}
             className="portrait"
             src="./portrait.jpg"
             alt="Andreas chilling with a hansome bunny"

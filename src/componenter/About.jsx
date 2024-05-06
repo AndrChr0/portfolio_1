@@ -10,7 +10,7 @@ function About() {
         </a>
         . Through my studies, I have gained a comprehensive understanding of
         the fundamental web technologies, including HTML, CSS, and
-        JavaScript. Additionally, I have familiarized myself with more complex
+        JavaScript. Additionally, I have familiarized myself with 
         tools such as PHP, Vue.js, React, Docker, and methods such as GitHub Actions, and
         automated testing. Outside of school, I am an avid
         climber and an active member in various student unions.
