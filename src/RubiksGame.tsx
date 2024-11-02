@@ -70,7 +70,7 @@ export default function RubiksGame() {
   }
 
   return (
-    <div className='bg-gray-900 h-dvh text-white px-4 sm:px-6 lg:px-8'>
+    <div className='bg-gray-900 h-dvh text-white px-4 sm:px-6 lg:px-8 fixed w-screen'>
       <div className='flex flex-col justify-center items-center pt-16 gap-8'>
         <h1 className='text-3xl sm:text-4xl lg:text-5xl text-center'>
           RUBIK'S TIMER
