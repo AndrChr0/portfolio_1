@@ -1,22 +1,25 @@
 import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import "./App.css";
-import Nav from "./componenter/Nav";
-import Footer from "./componenter/Footer";
+import Nav from "./components/Nav";
+import Footer from "./components/Footer";
 import Projects from "./Projects";
 import Home from "./Home";
+import RubiksGame from "./RubiksGame";
 
 function App() {
   return (
     // <Router>
-      <div className="App">
-        <Nav />
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/projects" element={<Projects />} />
-        </Routes>
-        <Footer />
-      </div>
+    <div className='App'>
+      <Nav />
+      <Routes>
+        <Route path='/' element={<Home />} />
+        <Route path='/projects' element={<Projects />} />
+        <Route path='*' element={<h1>Not Found</h1>} />
+        <Route path='/rubiks' element={<RubiksGame />} />
+      </Routes>
+      <Footer />
+    </div>
     // </Router>
   );
 }
