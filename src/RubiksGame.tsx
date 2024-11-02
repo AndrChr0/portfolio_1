@@ -70,7 +70,7 @@ export default function RubiksGame() {
   }
 
   return (
-    <div className='bg-gray-900 py-24 text-white px-4 sm:px-6 lg:px-8'>
+    <div className='bg-gray-900 h-dvh text-white px-4 sm:px-6 lg:px-8'>
       <div className='flex flex-col justify-center items-center pt-16 gap-8'>
         <h1 className='text-3xl sm:text-4xl lg:text-5xl text-center'>
           RUBIK'S TIMER
@@ -78,7 +78,9 @@ export default function RubiksGame() {
         <div className='flex flex-wrap justify-center gap-4'>
           <button
             className={`px-4 py-2 rounded text-sm sm:text-base ${
-              isRunning ? "bg-red-500" : "bg-green-900"
+              isRunning
+                ? "bg-red-500 hover:bg-red-300"
+                : "bg-green-900 hover:bg-green-700"
             }`}
             onClick={() => setIsRunning(!isRunning)}
           >
@@ -86,11 +88,12 @@ export default function RubiksGame() {
           </button>
           <button
             disabled={time === 0}
-            className={`px-4 py-2 rounded border border-black ${
-              time === 0
-                ? "bg-slate-200 text-gray-500 cursor-not-allowed"
-                : "bg-white text-black"
-            } text-sm sm:text-base`}
+            className={`px-4 py-2 rounded border border-black hover:bg-gray-400
+                 ${
+                   time === 0
+                     ? "bg-slate-200 text-gray-500 cursor-not-allowed"
+                     : "bg-white text-black"
+                 } text-sm sm:text-base`}
             onClick={handleReset}
           >
             RESET
@@ -99,7 +102,7 @@ export default function RubiksGame() {
           {time > 0 && !isRunning && (
             <button
               onClick={handleSaveTime}
-              className='bg-slate-800 px-4 py-2 rounded text-sm sm:text-base'
+              className='bg-slate-800 px-4 py-2 rounded text-sm sm:text-base hover:bg-slate-700'
             >
               NEW BEST TIME
             </button>
