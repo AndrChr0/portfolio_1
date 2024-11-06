@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap");
 
+/* Mobile first */
 * {
   margin: 0;
   padding: 0;
@@ -15,9 +16,15 @@ main {
   width: 93%;
   margin: 0 auto;
 }
-p {
-  font-size: 1.3em;
-  line-height: 1.6em;
+
+.about-container {
+  width: 100%;
+  margin: 0 auto;
+  && p {
+    font-size: 1em;
+    line-height: 1.6em;
+    max-width: 70ch;
+  }
 }
 
 h1 {
@@ -233,6 +240,13 @@ footer {
   .github-icon-nav {
     width: 7vw;
   }
+
+  .about-container {
+    && p {
+      font-size: 1.2em;
+    }
+  }
+
   .skills-container {
     grid-template-columns: repeat(5, 1fr);
     grid-template-rows: repeat(2, 1fr);
@@ -309,6 +323,16 @@ footer {
 
   .tooltip {
     margin-left: -9vw;
+  }
+
+  .about-container {
+    width: 50vw;
+    margin: 0 auto;
+    && p {
+      font-size: 1.3em;
+      line-height: 1.6em;
+      max-width: 70ch;
+    }
   }
 
   .skills-container {
