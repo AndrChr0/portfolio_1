@@ -84,7 +84,7 @@ export default function RubiksGame() {
             }`}
             onClick={() => setIsRunning(!isRunning)}
           >
-            {isRunning ? "STOP" : "START"}
+            {isRunning ? "STOP" : "START"} (Space)
           </button>
           <button
             disabled={time === 0}
@@ -96,7 +96,7 @@ export default function RubiksGame() {
                  } text-sm sm:text-base`}
             onClick={handleReset}
           >
-            RESET
+            RESET(r)
           </button>
 
           {time > 0 && !isRunning && (
