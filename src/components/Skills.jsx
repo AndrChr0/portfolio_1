@@ -1,7 +1,6 @@
 function Skills() {
   return (
     <div>
-      {/* <h2 className='font-semibold text-3xl'>Skills</h2> */}
       <div className='skills-container'>
         <div className='skill-item'>
           <img tabIndex={0} src='./icons/js.svg' alt='JavaScript icon' />

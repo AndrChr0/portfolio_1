@@ -3,7 +3,7 @@ function About() {
     <div tabIndex={0} className='about-container'>
       <h2 className='font-semibold text-3xl'>About</h2>
       <p>
-        I am currently completing my second year at NTNU Gjøvik, where I am
+        I am currently completing my third year at NTNU Gjøvik, where I am
         pursuing a{" "}
         <a target='_blank' href='https://www.ntnu.no/studier/bwu'>
           bachelor's degree in Web Development

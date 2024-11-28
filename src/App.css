@@ -8,7 +8,8 @@
   font-family: "Roboto Slab", serif;
 }
 body {
-  background-color: whitesmoke;
+  background-color: rgb(24, 24, 24);
+  color: white;
 }
 
 /* general */
@@ -45,7 +46,7 @@ h2 {
 nav {
   width: 100%;
   min-height: 8vh;
-  background-color: rgb(0, 23, 44);
+  background-color: rgb(0, 0, 0);
   color: #333;
   display: flex;
 }
@@ -65,7 +66,7 @@ nav ul li {
 }
 
 nav ul li:hover {
-  background-color: rgb(0, 11, 20);
+  background-color: rgb(46, 46, 46);
 }
 
 .nav-inner-left {
@@ -139,6 +140,7 @@ a {
 .skill-item img {
   height: 10vh;
   transition: transform 0.3s;
+  filter: brightness(0) invert(1);
 }
 
 .skill-item img:hover {
@@ -148,7 +150,7 @@ a {
 .tooltip {
   visibility: hidden;
   width: 120px;
-  color: black;
+  color: rgb(255, 255, 255);
   text-align: center;
   padding: 0.3em 0;
   border-radius: 6px;
@@ -159,7 +161,8 @@ a {
   margin-left: -20vw;
 }
 
-.skill-item:hover .tooltip {
+.skill-item:hover .tooltip,
+.skill-item:focus .tooltip {
   visibility: visible;
 }
 
@@ -174,7 +177,7 @@ a {
   flex-direction: column;
   padding: 0.5em;
   margin: 1.2em 0;
-  background-color: #f9f9f9;
+  background-color: #1d1d1d;
   border-radius: 10px;
 }
 
@@ -204,7 +207,7 @@ a {
 /* footer */
 footer {
   margin-top: 1em;
-  background-color: rgb(0, 23, 44);
+  background-color: rgb(0, 0, 0);
   color: white;
   text-align: center;
   padding: 1.5em;
@@ -302,7 +305,7 @@ footer {
   }
 
   .github-icon-nav {
-    width: 3.4vw;
+    width: 2.4vw;
   }
   h1 {
     font-size: 3.5em;
@@ -318,7 +321,7 @@ footer {
   }
 
   main {
-    width: 70%;
+    width: 100%;
   }
 
   .tooltip {
