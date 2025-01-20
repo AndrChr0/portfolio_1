@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap");
 
-/* Mobile first */
+/* Mobile first
 * {
   margin: 0;
   padding: 0;
@@ -9,10 +9,10 @@
 }
 body {
   background-color: whitesmoke;
-}
+} */
 
 /* general */
-main {
+/* main {
   width: 93%;
   margin: 0 auto;
 }
@@ -39,10 +39,10 @@ h2 {
 .heading-sub-text {
   font-size: 1.4em;
   padding-left: 1em;
-}
+} */
 
 /* navigation */
-nav {
+/* nav {
   width: 100%;
   min-height: 8vh;
   background-color: rgb(0, 23, 44);
@@ -96,10 +96,10 @@ a {
 .github-icon-nav:hover {
   transform: scale(1.1);
   transition: transform 0.5s;
-}
+} */
 
 /* hero */
-.hero-wrapper {
+/* .hero-wrapper {
   padding-top: 2em;
 }
 .portrait {
@@ -114,15 +114,15 @@ a {
   padding-top: 5em;
   padding-bottom: 5em;
   margin: 0 auto;
-}
+} */
 
 /* about */
-.about-container {
+/* .about-container {
   padding-bottom: 4em;
-}
+} */
 
 /* skills */
-.skills-container {
+/* .skills-container {
   padding-top: 1em;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -161,10 +161,10 @@ a {
 
 .skill-item:hover .tooltip {
   visibility: visible;
-}
+} */
 
 /* projects */
-.project-container {
+/* .project-container {
   display: flex;
   flex-direction: column;
 }
@@ -199,20 +199,20 @@ a {
   display: flex;
   gap: 1em;
   padding-top: 1em;
-}
+} */
 
 /* footer */
-footer {
+/* footer {
   margin-top: 1em;
   background-color: rgb(0, 23, 44);
   color: white;
   text-align: center;
   padding: 1.5em;
-}
+} */
 
 /* Media queries */
 
-@media screen and (max-width: 360px) {
+/* @media screen and (max-width: 360px) {
   .skill-item img {
     height: 9vh;
   }
@@ -259,9 +259,9 @@ footer {
   .tooltip {
     margin-left: -15vw;
   }
-}
+} */
 
-@media screen and (min-width: 768px) {
+/* @media screen and (min-width: 768px) {
   .github-icon-nav {
     width: 6vw;
   }
@@ -349,4 +349,4 @@ footer {
   .tooltip {
     margin-left: -8vw;
   }
-}
+} */
