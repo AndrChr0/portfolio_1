@@ -7,8 +7,8 @@ function Home() {
     <>
       <main>
         <Hero />
-        <About />
-        <Skills />
+        {/* <About /> */}
+        {/* <Skills /> */}
       </main>
     </>
   );
