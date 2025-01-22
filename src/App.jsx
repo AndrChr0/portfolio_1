@@ -10,7 +10,7 @@ import RubiksGame from "./RubiksGame";
 function App() {
   return (
     // <Router>
-    <div className='App'>
+    <div className='App overflow-x-hidden'>
       {/* <Nav /> */}
       <Routes>
         <Route path='/' element={<Home />} />

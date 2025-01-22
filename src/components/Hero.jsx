@@ -5,7 +5,7 @@ function Hero() {
     <div className=''>
       <video
         src='/portfolio_hero_vid.mp4'
-        className='h-screen'
+        className='max-w-none h-screen translate-x-[-50%] md:w-screen object-cover md:translate-x-0'
         autoPlay
         loop
         muted
