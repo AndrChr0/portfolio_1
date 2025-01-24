@@ -5,10 +5,12 @@ import About from "./components/About";
 function Home() {
   return (
     <>
-      <main>
+      <main className='bg-black text-white'>
         <Hero />
-        {/* <About /> */}
-        {/* <Skills /> */}
+        <div className='h-screen'>
+          <About />
+          <Skills />
+        </div>
       </main>
     </>
   );

@@ -6,6 +6,38 @@
   box-sizing: border-box;
   font-family: "Roboto", serif;
 }
+html {
+  scroll-behavior: smooth;
+}
+
+/* .skills-container {
+  padding-top: 1em;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 1rem;
+} */
+
+.skill-item {
+  position: relative;
+  margin: 0.7em 0.2em;
+}
+
+.skill-item img {
+  height: 10vh;
+  transition: transform 0.3s;
+  filter: invert(1);
+}
+
+.skill-item img:hover {
+  transform: scale(1.1);
+}
+
+.skill-item:hover .tooltip {
+  visibility: visible;
+}
+
 /* Mobile first
 
 body {
@@ -123,46 +155,7 @@ a {
 } */
 
 /* skills */
-/* .skills-container {
-  padding-top: 1em;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(4, 1fr);
-  grid-column-gap: 0px;
-  grid-row-gap: 1rem;
-}
-
-.skill-item {
-  position: relative;
-  margin: 0.7em 0.2em;
-}
-
-.skill-item img {
-  height: 10vh;
-  transition: transform 0.3s;
-}
-
-.skill-item img:hover {
-  transform: scale(1.1);
-}
-
-.tooltip {
-  visibility: hidden;
-  width: 120px;
-  color: black;
-  text-align: center;
-  padding: 0.3em 0;
-  border-radius: 6px;
-  position: absolute;
-  z-index: 1;
-  bottom: 100%;
-  left: 50%;
-  margin-left: -20vw;
-}
-
-.skill-item:hover .tooltip {
-  visibility: visible;
-} */
+/*  */
 
 /* projects */
 /* .project-container {
