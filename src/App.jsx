@@ -14,9 +14,9 @@ function App() {
       {/* <Nav /> */}
       <Routes>
         <Route path='/' element={<Home />} />
-        <Route path='/projects' element={<Projects />} />
+        {/* <Route path='/projects' element={<Projects />} /> */}
         <Route path='*' element={<h1>Not Found</h1>} />
-        <Route path='/rubiks' element={<RubiksGame />} />
+        {/* <Route path='/rubiks' element={<RubiksGame />} /> */}
       </Routes>
       <Footer />
     </div>
