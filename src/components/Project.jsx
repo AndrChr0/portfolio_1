@@ -1,4 +1,6 @@
-function Project(
+import { urlFor } from "../main";
+
+function Project({
   header,
   text,
   mainImg,
@@ -6,23 +8,43 @@ function Project(
   live,
   gitHub,
   process,
-  icons
-) {
+  tech,
+}) {
+  // icons
   return (
-    <div>
+    <div className='bg-black flex flex-col items-center justify-center w-11/12  mx-auto my-0 '>
       <h2>{header}</h2>
-      <p>{text}</p>
-      <img src={mainImg} alt={mainImgAlt} />
+      {/* <p>{text}</p> */}
+      <img src={urlFor(mainImg)} alt={mainImgAlt} />
       <div>
-        <a href={live}>Live</a>
-        <a href={gitHub}>GitHub</a>
-        <a href={process}>Process</a>
+        {live ? (
+          <a href={live} target='_blank' rel='noreferrer'>
+            Live
+          </a>
+        ) : null}
+        {gitHub ? (
+          <a href={gitHub} target='_blank' rel='noreferrer'>
+            GitHub
+          </a>
+        ) : null}
+        {process
+          ? -(
+              <a href={process} target='_blank' rel='noreferrer'>
+                Process
+              </a>
+            )
+          : null}
       </div>
-      <div>
-        {icons.map((icon, index) => (
-          <div key={index}>
-            <img src={icon.src} alt={icon.alt} />
-            <p>{icon.label}</p>
+
+      <div className='flex justify-center gap-4 py-4'>
+        {tech.map((technology) => (
+          <div key={technology._key} className='flex flex-col items-center'>
+            <img
+              src={urlFor(technology.image.asset._ref)}
+              alt={technology.name}
+              className='w-12 h-12 invert'
+            />
+            <p>{technology.name}</p>
           </div>
         ))}
       </div>
