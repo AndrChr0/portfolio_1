@@ -44,7 +44,7 @@ function Hero() {
           </a>
           <a
             className='text-center py-2 px-2 bg-[rgba(0,0,0,.3)] hover:font-normal md:bg-[rgba(0,0,0,.0)] md: w-52'
-            href='#about'
+            href='#projects'
           >
             Projects
           </a>

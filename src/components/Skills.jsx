@@ -31,21 +31,23 @@ function Skills() {
   ];
 
   return (
-    <div className='w-11/12 lg:w-1/2 h-1/2 mx-auto my-0 flex flex-col justify-center pb-8 pt-8'>
-      <div className='h-full grid grid-cols-3 grid-rows-4 lg:grid-rows-4 lg:grid-cols-4 gap-y-2 lg:gap-y-20 justify-items-center px-8 '>
-        {skilsContent.map((skill, index) => (
-          <div key={index} className='w-14 md:w-16 relative group'>
-            <img
-              className='h-14 md:h-20 transition-transform duration-300 invert'
-              tabIndex={0}
-              src={skill.src}
-              alt={skill.alt}
-            />
-            <span className='opacity-0 group-hover:opacity-100 transition-opacity duration-300'>
-              {skill.label}
-            </span>
-          </div>
-        ))}
+    <div>
+      <div className='w-11/12 lg:w-1/2 h-1/2 mx-auto my-auto flex flex-col justify-center lg:pt-[10dvh]'>
+        <div className='h-full grid grid-cols-3 grid-rows-4 lg:grid-rows-4 lg:grid-cols-4 gap-y-2 lg:gap-y-20 justify-items-center px-8 '>
+          {skilsContent.map((skill, index) => (
+            <div key={index} className='w-14 md:w-16 relative group'>
+              <img
+                className='h-10 md:h-20 transition-transform duration-300 invert'
+                tabIndex={0}
+                src={skill.src}
+                alt={skill.alt}
+              />
+              <span className='opacity-0 group-hover:opacity-100 transition-opacity duration-300'>
+                {skill.label}
+              </span>
+            </div>
+          ))}
+        </div>
       </div>
     </div>
   );
