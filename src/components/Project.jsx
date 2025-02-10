@@ -1,5 +1,6 @@
 import { urlFor } from "../main";
 import { Link } from "react-router-dom";
+import "../project.css";
 
 function Project({
   header,
@@ -8,7 +9,7 @@ function Project({
   mainImgAlt,
   live,
   gitHub,
-  process,
+  // process,
   tech,
   pathName,
 }) {
@@ -21,7 +22,7 @@ function Project({
       <img
         src={urlFor(mainImg)}
         alt={mainImgAlt}
-        className='md:w-3/4 mx-auto my-0'
+        className='md:w-3/4 mx-auto my-0 hover-effect'
       />
       <div className='underline flex justify-center gap-4'>
         {live ? (
@@ -36,7 +37,7 @@ function Project({
         ) : null}
         {pathName ? (
           <Link to={`/${pathName}`} className='underline'>
-            Process
+            Read More
           </Link>
         ) : null}
       </div>
