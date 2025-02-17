@@ -16,46 +16,61 @@ function Project({
   console.log(gitHub);
   // icons
   return (
-    <div className='bg-black flex flex-col justify-center mx-auto my-0 gap-4 py-8'>
-      <h2 className='text-2xl font-light'>{header}</h2>
-      <p className='max-w-[70ch] md:pl-4 md:text-xl font-extralight'>{text}</p>
-      <img
-        src={urlFor(mainImg)}
-        alt={mainImgAlt}
-        className='md:w-3/4 mx-auto my-0 hover-effect'
-      />
-      <div className='underline flex justify-center gap-4'>
-        {live ? (
-          <a href={live} target='_blank' rel='noreferrer'>
+<div className='mx-auto max-w-xl shadow-2xl  border-slate-900 mb-6 overflow-hidden'>
+  <div className='md:flex-shrink-0'>
+    <img
+      src={urlFor(mainImg)}
+      alt={mainImgAlt}
+      className='w-full h-64 object-cover'
+    />
+  </div>
+  
+  <div className='px-6 py-4 '>
+    <h2 className='text-2xl font-bold tracking-tight mb-3'>
+      {header}
+    </h2>
+    
+    <p className='text-base font-light mb-4'>
+      {text}
+    </p>
+
+    <div className='flex justify-between items-center mb-6'>
+      <div className='flex gap-4'>
+        {live && (
+          <a href={live} target='_blank' rel='noreferrer' className=' hover:text-gray-200 underline'>
             Live
           </a>
-        ) : null}
-        {gitHub ? (
-          <a href={gitHub} target='_blank' rel='noreferrer'>
+        )}
+        {gitHub && (
+          <a href={gitHub} target='_blank' rel='noreferrer' className='hover:text-gray-200 underline'>
             GitHub
           </a>
-        ) : null}
-        {pathName ? (
-          <Link to={`/${pathName}`} className='underline'>
-            Read More
-          </Link>
-        ) : null}
+        )}
       </div>
+      
+      {pathName && (
+        <Link to={`/${pathName}`} className=' hover:text-gray-200 underline'>
+          Read More →
+        </Link>
+      )}
+    </div>
 
-      <div className='flex justify-center gap-4'>
+    <div className='border-t pt-4'>
+      <div className='flex flex-wrap justify-center gap-6'>
         {tech.map((technology) => (
           <div key={technology._key} className='flex flex-col items-center'>
             <img
               src={urlFor(technology.image.asset._ref)}
               alt={technology.name}
-              className='w-12 h-12 invert'
+              className='w-12 h-12 object-contain mb-2 invert'
             />
-            <p>{technology.name}</p>
+            <span className='text-sm'>{technology.name}</span>
           </div>
         ))}
       </div>
-      <div className='bg-white py-[1px] w-2/3 flex my-0 mx-auto'></div>
     </div>
+  </div>
+</div>
   );
 }
 

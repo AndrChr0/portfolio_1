@@ -18,7 +18,7 @@ function Process() {
         setProjectData(data.result[0]);
         setLoading(false);
       });
-  }, []);
+  }, [pathname]);
 
   console.log(projectData);
 
