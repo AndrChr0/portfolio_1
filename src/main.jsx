@@ -4,7 +4,7 @@ import App from "./App.jsx";
 import "./Index.css";
 
 import { BrowserRouter } from "react-router-dom";
-import dotenv from "dotenv";
+// import dotenv from "dotenv";
 import { createClient } from "@sanity/client";
 
 import imageUrlBuilder from "@sanity/image-url";
