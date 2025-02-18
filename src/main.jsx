@@ -4,12 +4,11 @@ import App from "./App.jsx";
 import "./Index.css";
 
 import { BrowserRouter } from "react-router-dom";
-// import dotenv from "dotenv";
+import dotenv from "dotenv";
 import { createClient } from "@sanity/client";
 
 import imageUrlBuilder from "@sanity/image-url";
 
-const projID = process.env.VITE_PROJECT_ID;
 export const client = createClient({
   projectId: "aur0cyqw",
   dataset: "production",
