@@ -4,7 +4,7 @@ import { useEffect, useState } from "react";
 function Projects() {
   const [projectData, setProjectData] = useState([]);
 
-  const apiQueryURL = import.meta.env.VITE_API_QUERY;
+  const apiQueryURL = "https://aur0cyqw.api.sanity.io/v2022-03-07/data/query/production?query=*%5B_type+%3D%3D+%22project%22%5D+%7C+order%28projctOrder+asc%29";
 
   useEffect(() => {
     fetch(apiQueryURL)
