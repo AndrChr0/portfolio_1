@@ -7,7 +7,8 @@ export default defineConfig(({ mode }) => {
   return {
     plugins: [react()],
     define: {
-      'import.meta.env': JSON.stringify(env)
+      __APP_ENV__: JSON.stringify(env.APP_ENV),
+
     }
   }
 })
