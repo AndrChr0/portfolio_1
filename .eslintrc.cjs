@@ -1,5 +1,6 @@
 module.exports = {
   root: true,
+  
   env: { browser: true, es2020: true },
   extends: [
     'eslint:recommended',
@@ -12,6 +13,7 @@ module.exports = {
   settings: { react: { version: '18.2' } },
   plugins: ['react-refresh'],
   rules: {
+    'node': true,
     'react/prop-types': 'off',
     'react/no-unescaped-entities': 'off',
     'react/jsx-no-target-blank': 'off',
