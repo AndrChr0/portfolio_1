@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { useLocation } from "react-router-dom";
+import { useLocation, Link } from "react-router-dom";
 
 function Process() {
   const [projectData, setProjectData] = useState([]);
@@ -23,11 +23,12 @@ function Process() {
   console.log(projectData);
 
   return (
-    <div>
+    <div className="bg-black text-white">
       {loading ? (
         <p>Loading...</p>
       ) : (
         <div>
+          <Link to="/" className="underline hover:text-slate-200">← Home</Link>
           <h2>{projectData.title}</h2>
           <p>{projectData.mainText}</p>
         </div>

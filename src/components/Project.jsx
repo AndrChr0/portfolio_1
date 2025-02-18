@@ -16,7 +16,7 @@ function Project({
   console.log(gitHub);
   // icons
   return (
-<div className='mx-auto max-w-xl shadow-2xl  border-slate-900 mb-6 overflow-hidden'>
+<div className='mx-auto max-w-xl shadow-2xl bg-neutral-950 border-slate-900 mb-6 overflow-hidden'>
   <div className='md:flex-shrink-0'>
     <img
       src={urlFor(mainImg)}
