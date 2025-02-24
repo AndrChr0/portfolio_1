@@ -1,9 +1,8 @@
-
 function Hero() {
   return (
     <div className='relative'>
       <video
-        src='/portfolio_hero_vid.mp4'
+        src='/HD_single_portfolio_hero.mp4'
         className='max-w-none h-screen translate-x-[-50%] md:w-screen object-cover md:translate-x-0'
         autoPlay
         loop
@@ -15,7 +14,10 @@ function Hero() {
           <h1 className='text-5xl md:text-8xl font-thin'>
             Andreas Christiansen
           </h1>
-          <p className='pl-4 text-xl md:text-2xl'> <span className="font-light">Full-stack</span> Web Developer</p>
+          <p className='pl-4 text-xl md:text-2xl'>
+            {" "}
+            <span className='font-light'>Full-stack</span> Web Developer
+          </p>
         </div>
 
         <div className='flex flex-col pt-8 gap-1 underline pl-12 font-extralight text-2xl w-10'>
@@ -35,7 +37,7 @@ function Hero() {
           </a>
         </div>
         <div className='flex flex-col md:flex-row justify-center items-center gap-8 pt-24 text-2xl md:text-4xl font-light '>
-        <a
+          <a
             className='text-center py-2 px-2 bg-[rgba(0,0,0,.3)] hover:font-normal md:bg-[rgba(0,0,0,.0)] md: w-52'
             href='#projects'
           >
@@ -47,7 +49,6 @@ function Hero() {
           >
             About Me
           </a>
-        
         </div>
       </div>
     </div>
