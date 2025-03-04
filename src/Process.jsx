@@ -24,7 +24,7 @@ function Process() {
   console.log(projectData);
 
   return (
-    <div className='bg-black text-white'>
+    <div className='bg-black text-white w-11/12 lg:w-2/3 mx-auto mt-4 mb-0'>
       {loading ? (
         <p>Loading...</p>
       ) : (
@@ -32,77 +32,97 @@ function Process() {
           <Link to='/' className='underline hover:text-slate-200'>
             ← Home
           </Link>
-          <h1 className='text-5xl font-bold pt-4'>{projectData.title}</h1>
-          <p className='px-2 py-4'>{projectData.mainText}</p>
+          <h1 className='text-5xl font-light pt-4'>{projectData.title}</h1>
+          <p className='px-2 py-4 md:text-xl font-light md:w-[77ch]'>
+            {projectData.mainText}
+          </p>
           <img
             src={urlFor(projectData.mainImage.asset._ref)}
             alt={projectData.mainImageAlt}
           />
 
-          <h2 className='text-2xl font-bold tracking-tight pt-2'>
-            My contributions
-          </h2>
-          <p className='px-2'>{projectData.contributionText}</p>
+          <div className='flex flex-col md:flex-row gap-6 py-10'>
+            <div className='w-full'>
+              <h2 className='text-4xl font-light tracking-tight pt-2'>
+                My contributions
+              </h2>
+              <p className='px-2 text-lg font-light'>
+                {projectData.contributionText}
+              </p>
+            </div>
+            <div className='w-full'>
+              <h2 className='text-4xl font-light pt-2'>Project Credit</h2>
+              <ul className='px-2 text-lg font-light'>
+                {projectData.contributors.map((contributor) =>
+                  contributor.contributorPortfolio ? (
+                    <li key={contributor._key}>
+                      <a
+                        href={contributor.contributorPortfolio}
+                        target='_blank'
+                        rel='noreferrer'
+                        className='underline hover:text-slate-200'
+                      >
+                        {contributor.contributorName}
+                      </a>
+                    </li>
+                  ) : (
+                    <li key={contributor._key}>
+                      {contributor.contributorName}
+                    </li>
+                  )
+                )}
+              </ul>
+            </div>
+          </div>
 
-          <h2 className='text-2xl font-bold pt-2'>Project Credit</h2>
-          <ul className='px-2'>
-            {projectData.contributors.map((contributor) =>
-              contributor.contributorPortfolio ? (
-                <li key={contributor._key}>
-                  <a
-                    href={contributor.contributorPortfolio}
-                    target='_blank'
-                    rel='noreferrer'
-                    className='underline hover:text-slate-200'
-                  >
-                    {contributor.contributorName}
-                  </a>
-                </li>
-              ) : (
-                <li key={contributor._key}>{contributor.contributorName}</li>
-              )
-            )}
-          </ul>
-
-          <div>
-            <h3 className='text-xl font-normal pt-2'>
-              {projectData.processSection[0].stepTitle}
-            </h3>
-            <div className='flex flex-col md:flex-row'>
+          <div className='flex flex-col gap-14'>
+            <div className='flex flex-col gap-4 md:flex-row'>
               <img
-                className='md:w-1/2'
+                className='w-full h-auto object-cover md:w-1/2'
                 src={urlFor(projectData.processSection[0].stepImage.asset._ref)}
                 alt={projectData.processSection[0].stepImageAltText}
               />
-              <p className='px-2 pt-2'>
-                {projectData.processSection[0].stepText}
-              </p>
+              <div>
+                <h3 className='text-3xl font-light'>
+                  {projectData.processSection[0].stepTitle}
+                </h3>
+                <p className='px-2 pt-2 text-xl font-light md:px-0'>
+                  {projectData.processSection[0].stepText}
+                </p>
+              </div>
             </div>
-            <h3 className='text-xl font-normal pt-2'>
-              {projectData.processSection[1].stepTitle}
-            </h3>
-            <div className='flex flex-col md:flex-row-reverse'>
+
+            <div className='flex flex-col gap-4 md:flex-row-reverse'>
               <img
-                className='md:w-1/2'
+                className='w-full h-auto object-cover md:w-1/2'
                 src={urlFor(projectData.processSection[1].stepImage.asset._ref)}
                 alt={projectData.processSection[1].stepImageAltText}
               />
-              <p className='px-2 pt-2'>
-                {projectData.processSection[1].stepText}
-              </p>
+
+              <div>
+                <h3 className='text-3xl font-light'>
+                  {projectData.processSection[1].stepTitle}
+                </h3>
+                <p className='px-2 pt-2 text-xl font-light md:px-0'>
+                  {projectData.processSection[1].stepText}
+                </p>
+              </div>
             </div>
-            <h3 className='text-xl font-normal pt-2'>
-              {projectData.processSection[2].stepTitle}
-            </h3>
-            <div className='flex flex-col md:flex-row md:item-center'>
+
+            <div className='flex flex-col gap-4 md:flex-row md:item-center'>
               <img
-                className='md:w-1/2'
+                className='w-full h-auto object-cover md:w-1/2'
                 src={urlFor(projectData.processSection[2].stepImage.asset._ref)}
                 alt={projectData.processSection[2].stepImageAltText}
               />
-              <p className='px-2 pt-2'>
-                {projectData.processSection[2].stepText}
-              </p>
+              <div>
+                <h3 className='text-3xl font-light'>
+                  {projectData.processSection[2].stepTitle}
+                </h3>
+                <p className='px-2 pt-2 text-xl font-light md:px-0'>
+                  {projectData.processSection[2].stepText}
+                </p>
+              </div>
             </div>
           </div>
           <div className='flex flex-wrap justify-center gap-6 pt-4'>
