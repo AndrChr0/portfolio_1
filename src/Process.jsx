@@ -22,7 +22,8 @@ function Process() {
   }, [pathname]);
 
   console.log(projectData);
-
+  // SLIDESHOW
+  // https://v0.dev/chat/image-slideshow-script-QGZOunmqzWq
   return (
     <div className='bg-black text-white w-11/12 lg:w-2/3 mx-auto mt-4 mb-0'>
       {loading ? (
