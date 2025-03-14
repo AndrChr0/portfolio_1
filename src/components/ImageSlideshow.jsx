@@ -70,7 +70,10 @@ export default function ImageSlideshow({
 
   return (
     <div
-      className={cn("relative w-full overflow-hidden rounded-lg", className)}
+      className={cn(
+        "relative w-full md:w-[95%] overflow-hidden rounded-lg mx-auto my-0",
+        className
+      )}
     >
       {/* Slideshow container */}
       <div className='relative aspect-video w-full'>
@@ -90,7 +93,7 @@ export default function ImageSlideshow({
               alt={slide.slideImageAltText}
               className='h-full w-full object-cover'
             />
-            <div className='absolute bottom-4 left-4 max-w-[80%] rounded bg-black/50 px-3 py-2 text-white backdrop-blur-sm'>
+            <div className='absolute bottom-6 left-0 max-w-[80%] bg-black/80 px-3 py-2 text-white backdrop-blur-sm z-10'>
               {slide.caption}
             </div>
           </div>
@@ -114,7 +117,7 @@ export default function ImageSlideshow({
       </button>
 
       {/* Slide indicators */}
-      <div className='absolute bottom-4 left-1/2 flex -translate-x-1/2 gap-1.5'>
+      <div className='absolute bottom-3 left-1/2 flex -translate-x-1/2 gap-1.5'>
         {slides.map((_, index) => (
           <button
             key={index}
