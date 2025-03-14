@@ -1,6 +1,8 @@
 import { useState, useEffect } from "react";
 import { useLocation, Link } from "react-router-dom";
 import { urlFor } from "./main";
+// import ImageSlideshow from "./components/ImageSlideShow";
+import ImageSlideshow from "./components/ImageSlideshow";
 
 function Process() {
   const [projectData, setProjectData] = useState([]);
@@ -56,9 +58,14 @@ function Process() {
             </div>
           </div>
 
-          <img
+          {/* <img
             src={urlFor(projectData.mainImage.asset._ref)}
             alt={projectData.mainImageAlt}
+          /> */}
+
+          <ImageSlideshow
+            slides={projectData.slideshowContent}
+            interval={7000}
           />
 
           <div className='flex flex-col md:flex-row gap-6 py-10'>
