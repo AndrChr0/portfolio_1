@@ -33,7 +33,7 @@ function Skills() {
   return (
     <div>
       <div className='w-11/12 lg:w-1/2 h-1/2 mx-auto my-auto flex flex-col justify-center pt-[5dvh]'>
-        <div className='h-full grid grid-cols-3 grid-rows-4 lg:grid-rows-4 lg:grid-cols-4 gap-y-2 lg:gap-y-5 justify-items-center px-8 '>
+        <div className='h-full grid grid-cols-3 grid-rows-4 md:grid-rows-3 lg:grid-cols-4 gap-y-2 lg:gap-y-5 justify-items-center px-8 '>
           {skilsContent.map((skill, index) => (
             <div key={index} className='w-14 md:w-16 relative group'>
               <img

@@ -1,8 +1,9 @@
+import CVTimeline from "./CVtimeLine";
 import Skills from "./Skills";
 
 function About() {
   return (
-    <div >
+    <div>
       <div
         id='about'
         tabIndex={0}
@@ -28,6 +29,7 @@ function About() {
         </p>
       </div>
       <Skills />
+      <CVTimeline />
     </div>
   );
 }
