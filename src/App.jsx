@@ -11,7 +11,7 @@ import Process from "./Process";
 function App() {
   return (
     // <Router>
-    <div className='App overflow-x-hidden'>
+    <div className='App'>
       {/* <Nav /> */}
       <Routes>
         <Route path='/' element={<Home />} />

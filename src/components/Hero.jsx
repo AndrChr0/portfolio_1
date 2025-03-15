@@ -1,9 +1,9 @@
 function Hero() {
   return (
-    <div className='relative'>
+    <div className='relative overflow-x-hidden'>
       <video
         src='/HD_single_portfolio_hero.mp4'
-        className='max-w-none h-screen translate-x-[-50%] md:w-screen object-cover md:translate-x-0'
+        className='max-w-none h-screen translate-x-[-50%] md:w-screen object-cover md:translate-x-0 '
         autoPlay
         loop
         muted

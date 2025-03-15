@@ -21,7 +21,7 @@ const defaultTimelineData = [
   },
   {
     title: "Internship - Frontend Web Developer",
-    organization: "Inmeta/Caryon consulting",
+    organization: "Inmeta/Crayon consulting",
     date: "2024 august - november",
     points: [
       "Working on a project, developing an Optimizley CMS plugin using React, TypeScript, Shadcn, and Optimizley",

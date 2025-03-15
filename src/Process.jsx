@@ -38,7 +38,7 @@ function Process() {
           <h1 className='text-5xl font-light pt-4'>{projectData.title}</h1>
 
           {/* <div className='flex flex-col md:flex-row md:gap-6'> */}
-          <p className='px-2 py-4 text-xl font-light md:w-[77ch]'>
+          <p className='px-2 py-4 text-xl font-light max-w-[75ch]'>
             {projectData.mainText}
           </p>
 
@@ -53,7 +53,7 @@ function Process() {
             slides={projectData.slideshowContent}
             interval={7000}
           />
-          <div className='pt-10 flex flex-col justify-center items-start md:flex-row gap-6'>
+          <div className='pt-10 flex flex-col justify-center items-start md:flex-row md:items-end gap-6'>
             <p className='text-xl font-extralight tracking-tight'>Made With:</p>
             <div className='flex flex-wrap justify-center gap-6 '>
               {projectData.technologies.map((technology) => (
