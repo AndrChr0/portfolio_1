@@ -83,27 +83,31 @@ function Process() {
               </div>
             )}
             <div className='w-full'>
-              <h2 className='text-4xl font-light pt-2'>Project Credit</h2>
-              <ul className='px-2 text-lg font-light'>
-                {projectData.contributors.map((contributor) =>
-                  contributor.contributorPortfolio ? (
-                    <li key={contributor._key}>
-                      <a
-                        href={contributor.contributorPortfolio}
-                        target='_blank'
-                        rel='noreferrer'
-                        className='underline hover:text-slate-200'
-                      >
-                        {contributor.contributorName}
-                      </a>
-                    </li>
-                  ) : (
-                    <li key={contributor._key}>
-                      {contributor.contributorName}
-                    </li>
-                  )
-                )}
-              </ul>
+              {projectData.contributors && (
+                <>
+                  <h2 className='text-4xl font-light pt-2'>Project Credit</h2>
+                  <ul className='px-2 text-lg font-light'>
+                    {projectData.contributors.map((contributor) =>
+                      contributor.contributorPortfolio ? (
+                        <li key={contributor._key}>
+                          <a
+                            href={contributor.contributorPortfolio}
+                            target='_blank'
+                            rel='noreferrer'
+                            className='underline hover:text-slate-200'
+                          >
+                            {contributor.contributorName}
+                          </a>
+                        </li>
+                      ) : (
+                        <li key={contributor._key}>
+                          {contributor.contributorName}
+                        </li>
+                      )
+                    )}
+                  </ul>
+                </>
+              )}
             </div>
           </div>
 
