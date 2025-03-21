@@ -81,7 +81,7 @@ export default function ImageSlideshow({
               alt={slide.slideImageAltText}
               className='h-full w-full object-cover'
             />
-            <div className='absolute bottom-6 left-0 max-w-[80%] bg-black/80 px-3 py-2 text-white backdrop-blur-sm z-10'>
+            <div className=' text-sm md:text-base absolute bottom-6 left-0 max-w-[80%] bg-black/80 px-3 md:py-2 text-white backdrop-blur-sm z-10 hidden md:block'>
               {slide.caption}
             </div>
           </div>
