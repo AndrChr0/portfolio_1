@@ -22,7 +22,7 @@ function Project({
         />
       </div>
 
-      <div className='px-6 py-4 '>
+      <div className='px-4 py-4 '>
         <h2 className='text-2xl font-bold tracking-tight mb-3'>{header}</h2>
 
         <p className='text-base font-light mb-4'>{text}</p>
