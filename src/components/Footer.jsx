@@ -1,13 +1,13 @@
 function Footer() {
   return (
-    <footer>
-      <p>Andreas Christiansen 2024</p>
-      <p>
-        Contact me:{" "}
-        <a href='mailto:andreas.christiansen@ntnu.no' className='underline'>
-          andreas.christiansen@ntnu.no
-        </a>
-      </p>
+    <footer className='flex flex-col justify-between font-extralight items-center h-16 md:h-24 bg-black text-white'>
+      <p className='py-4'>Andreas Christiansen 2025</p>
+      <a
+        className='bg-white text-black p-1 rounded-md font-normal mb-4 hover:bg-black hover:text-white'
+        href='#top'
+      >
+        Back to top
+      </a>
     </footer>
   );
 }
