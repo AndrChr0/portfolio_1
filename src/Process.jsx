@@ -13,7 +13,10 @@ function Process() {
 
   useEffect(() => {
     fetch(
-      `https://aur0cyqw.api.sanity.io/v2022-03-07/data/query/production?query=*%5B_type+%3D%3D+%27project%27+%26%26+pathName+%3D%3D+%22${pathname}%22%5D`
+      `https://aur0cyqw.api.sanity.io/v2022-03-07/data/query/production?query=*%5B_type+%3D%3D+%27project%27+%26%26+pathName+%3D%3D+%22${pathname}%22%5D`,
+      {
+        mode: "no-cors",
+      }
     )
       .then((response) => response.json())
       .then((data) => {
