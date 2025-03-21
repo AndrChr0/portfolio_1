@@ -8,17 +8,6 @@ const cn = (...classes) => {
   return classes.filter(Boolean).join(" ");
 };
 
-// interface Slide {
-//   image: string;
-//   caption: string;
-// }
-
-// interface SlideshowProps {
-//   slides: Slide[];
-//   interval?: number;
-//   className?: string;
-// }
-
 export default function ImageSlideshow({
   slides = [
     {
@@ -88,7 +77,6 @@ export default function ImageSlideshow({
             )}
           >
             <img
-              // urlFor(projectData.processSection[1].stepImage.asset._ref)
               src={urlFor(slide.image.asset._ref) || "/placeholder.svg"}
               alt={slide.slideImageAltText}
               className='h-full w-full object-cover'

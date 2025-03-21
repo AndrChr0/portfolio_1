@@ -1,7 +1,6 @@
 import { useState, useEffect } from "react";
 import { useLocation, Link } from "react-router-dom";
 import { urlFor } from "./main";
-// import ImageSlideshow from "./components/ImageSlideShow";
 import ImageSlideshow from "./components/ImageSlideshow";
 
 function Process() {
@@ -35,17 +34,9 @@ function Process() {
           </Link>
           <h1 className='text-5xl font-light pt-4'>{projectData.title}</h1>
 
-          {/* <div className='flex flex-col md:flex-row md:gap-6'> */}
           <p className='px-2 py-4 text-xl font-light max-w-[75ch]'>
             {projectData.mainText}
           </p>
-
-          {/* </div> */}
-
-          {/* <img
-            src={urlFor(projectData.mainImage.asset._ref)}
-            alt={projectData.mainImageAlt}
-          /> */}
 
           <ImageSlideshow
             slides={projectData.slideshowContent}
