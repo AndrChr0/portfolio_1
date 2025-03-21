@@ -1,55 +1,52 @@
 function Skills() {
+  const skilsContent = [
+    {
+      src: "./icons/js.svg",
+      alt: "JavaScript icon",
+      label: "JavaScript",
+    },
+    { src: "./icons/html5.svg", alt: "HTML5 icon", label: "HTML" },
+    { src: "./icons/w3_css-icon.svg", alt: "CSS3 icon", label: "CSS" },
+    { src: "./icons/react.svg", alt: "React icon", label: "React" },
+    { src: "./icons/sass.svg", alt: "Sass icon", label: "Sass" },
+    { src: "./icons/docker.svg", alt: "Docker icon", label: "Docker" },
+    { src: "./icons/MDB.svg", alt: "MongoDB icon", label: "MongoDB" },
+    {
+      src: "./icons/database-solid.svg",
+      alt: "MySQL icon",
+      label: "MySQL",
+    },
+    { src: "./icons/node.svg", alt: "Node icon", label: "Node" },
+    {
+      src: "./icons/tailwind.png",
+      alt: "Tailwind icon",
+      label: "Tailwind",
+    },
+    { src: "./icons/figma-logo.svg", alt: "Figma icon", label: "Figma" },
+    {
+      src: "./icons/typescript.svg",
+      alt: "TS icon",
+      label: "TypeScript",
+    },
+  ];
+
   return (
     <div>
-      {/* <h2 className='font-semibold text-3xl'>Skills</h2> */}
-      <div className='skills-container'>
-        <div className='skill-item'>
-          <img tabIndex={0} src='./icons/js.svg' alt='JavaScript icon' />
-          <span className='tooltip'>JavaScript</span>
-        </div>
-        <div className='skill-item'>
-          <img tabIndex={0} src='./icons/html5.svg' alt='HTML5 icon' />
-          <span className='tooltip'>HTML</span>
-        </div>
-        <div className='skill-item'>
-          <img tabIndex={0} src='./icons/css3-alt.svg' alt='CSS3 icon' />
-          <span className='tooltip'>CSS</span>
-        </div>
-        <div className='skill-item'>
-          <img tabIndex={0} src='./icons/react.svg' alt='React icon' />
-          <span className='tooltip'>React</span>
-        </div>
-        {/* <div className='skill-item'>
-          <img tabIndex={0} src='./icons/vuejs.svg' alt='Vue.js icon' />
-          <span className='tooltip'>Vue.js</span>
-        </div> */}
-        <div className='skill-item'>
-          <img tabIndex={0} src='./icons/sass.svg' alt='Sass icon' />
-          <span className='tooltip'>Sass</span>
-        </div>
-        {/* <div className='skill-item'>
-          <img tabIndex={0} src='./icons/php.svg' alt='PHP icon' />
-          <span className='tooltip'>PHP</span>
-        </div> */}
-        <div className='skill-item'>
-          <img tabIndex={0} src='./icons/docker.svg' alt='Docker icon' />
-          <span className='tooltip'>Docker</span>
-        </div>
-        <div className='skill-item'>
-          <img tabIndex={0} src='./icons/MDB.svg' alt='MongoDB icon' />
-          <span className='tooltip'>MongoDB</span>
-        </div>
-        <div className='skill-item'>
-          <img tabIndex={0} src='./icons/database-solid.svg' alt='MySQL icon' />
-          <span className='tooltip'>MySQL</span>
-        </div>
-        <div className='skill-item'>
-          <img tabIndex={0} src='./icons/node.svg' alt='Node icon' />
-          <span className='tooltip'>Node</span>
-        </div>
-        <div className='skill-item'>
-          <img tabIndex={0} src='./icons/tailwind.png' alt='Tailwind icon' />
-          <span className='tooltip'>Tailwind</span>
+      <div className='w-11/12 lg:w-1/2 h-1/2 mx-auto my-auto flex flex-col justify-center pt-[5dvh]'>
+        <div className='h-full grid grid-cols-3 grid-rows-4 md:grid-rows-3 lg:grid-cols-4 gap-y-2 lg:gap-y-5 justify-items-center px-8 '>
+          {skilsContent.map((skill, index) => (
+            <div key={index} className='w-14 md:w-16 relative group'>
+              <img
+                className='h-10 md:h-20 transition-transform duration-300 invert'
+                tabIndex={0}
+                src={skill.src}
+                alt={skill.alt}
+              />
+              <span className='opacity-0 group-hover:opacity-100 transition-opacity duration-300'>
+                {skill.label}
+              </span>
+            </div>
+          ))}
         </div>
       </div>
     </div>
