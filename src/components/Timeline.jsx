@@ -35,7 +35,7 @@ const defaultTimelineData = [
   },
 ];
 
-export default function CVTimeline({ timelineData = defaultTimelineData }) {
+export default function Timeline({ timelineData = defaultTimelineData }) {
   return (
     <div className='max-w-3xl mx-auto py-14 px-4'>
       {/* <h2 className='text-2xl font-bold mb-8 text-center'>Experience</h2> */}

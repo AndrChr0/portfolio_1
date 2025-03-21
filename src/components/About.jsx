@@ -1,4 +1,4 @@
-import CVTimeline from "./CVtimeLine";
+import CVTimeline from "./Timeline";
 import Skills from "./Skills";
 
 function About() {
