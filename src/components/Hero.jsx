@@ -7,6 +7,8 @@ function Hero() {
         autoPlay
         loop
         muted
+        playsInline 
+        preload="auto"
       ></video>
       <div className='absolute top-0 h-screen w-full bg-[rgba(0,0,0,.75)]'></div>
       <div className='w-[90dvw] flex flex-col absolute top-1/4 md:top-1/3 left-1/2 transform -translate-x-1/2 lg:w-[70dvw]'>
