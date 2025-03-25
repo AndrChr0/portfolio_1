@@ -13,12 +13,12 @@ function Project({
   pathName,
 }) {
   return (
-    <div className='mx-auto max-w-xl bg-neutral-950 border-slate-900 mb-6 overflow-hidden'>
+    <div className='mx-auto max-w-xl bg-neutral-950 border-slate-900 mb-6'>
       <div className='md:flex-shrink-0'>
         <img
           src={urlFor(mainImg)}
           alt={mainImgAlt}
-          className='w-full h-64 object-cover'
+          className='w-full object-cover'
         />
       </div>
 
