@@ -24,7 +24,7 @@ const defaultTimelineData = [
     organization: "Inmeta/Crayon consulting",
     date: "2024 august - november",
     points: [
-      "Working on a project, developing an Optimizley CMS plugin using React, TypeScript, Shadcn, and Optimizley",
+      "Developing an Optimizley CMS plug-in working mainly with React, TypeScript and Shadcn",
     ],
   },
   {
