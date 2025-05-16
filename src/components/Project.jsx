@@ -18,7 +18,7 @@ function Project({
         <img
           src={urlFor(mainImg)}
           alt={mainImgAlt}
-          className='w-full object-cover'
+          className='w-full object-cover h-64'
         />
       </div>
 
